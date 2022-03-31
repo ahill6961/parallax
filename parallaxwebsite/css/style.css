@@ -1,0 +1,87 @@
+body, html{
+  height:100%;
+  margin:0;
+  font-size:20px;
+  font-family:"Lato", sans-serif;
+  font-weight:400;
+}
+
+.pimg1, .pimg2, .pimg3{
+  position:relative;
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+
+  /*
+    fixed = parallax
+    scroll = normal
+  */
+  background-attachment:fixed;
+}
+
+.pimg1{
+  background-image:url("../images/plaza.jpg");
+  min-height:100%;
+}
+.pimg2{
+  background-image:url("../images/statue.jpg");
+  min-height:400px;
+}
+.pimg3{
+  background-image:url("../images/building.jpg");
+  min-height:400px;
+}
+.section{
+  text-align:center;
+  padding:50px 80px;
+}
+
+.section-light{
+    background-color: #D1D1D1;
+    color: #666;
+}
+
+.section-dark{
+    background-color: #D1D0D2;
+    color: #ddd;
+}
+
+.ptext{
+  position:absolute;
+  top:50%;
+  width:100%;
+  text-align:center;
+  color:#000;
+  font-size:27px;
+  letter-spacing:10px;
+  text-transform:uppercase;
+}
+
+.ptext .border{
+    background-color: #D1D0D2;
+    color: #000000;
+    padding: 15px;
+    font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+}
+
+.ptext .border.trans{
+  background-color:transparent;
+}
+
+h2 {
+    font-size: 60px;
+    font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+    color: #D21316;
+}
+
+p {
+    font-size: 25px;
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #000000;
+}
+
+@media(max-width:568px){
+  .pimg1, .pimg2, .pimg3{
+    background-attachment:scroll;
+  }
+}
